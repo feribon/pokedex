@@ -1,0 +1,193 @@
+body {
+	background: #efefbb;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 45%;
+	border-radius: 100%;
+	background-color: #fff;
+	opacity: 0.7;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #c24242;
+}
+
+.grass {
+	background-color: #95f09b;
+}
+
+.electric {
+	background-color: #d1f04a;
+}
+
+.water,
+.ice {
+	background-color: #61bee9;
+}
+
+.ground {
+	background-color: #5f3e1d;
+}
+
+.rock {
+	background-color: #858582;
+}
+
+.fairy {
+	background-color: #f3a6e9;
+}
+
+.poison {
+	background-color: #b857f0;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #230838;
+}
+
+.flying {
+	background-color: #f5f5f5;
+}
+
+.fighting {
+	background-color: #575550;
+}
+
+.normal {
+	background-color: #f5f5f5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	border-radius: 90px;
+	height: 220px;
+	position: relative;
+	z-index: 2;
+}
+.searchDiv{
+	border-radius: 15px;
+	margin: 0 auto;
+	text-align: center;
+	width: 330px;
+	height: 400px;
+	align-items: center;
+	justify-items: center;
+	/* background-color: red; */
+	border: 1px rgb(238, 85, 243) solid;
+}
+.searchInput, .btn{
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	height: 30px;
+	width: 300px;
+	font-size: 20px;
+	text-align: center;
+}
+.btn{ 
+	float: left;
+	margin-left: 12px;
+	width: 148px;
+	height: 35px;
+}
+#xxx{
+	border-radius: 10px;
+	/* margin: 10px; */
+	padding-top: 20px;
+	height: 280px;
+}
+.imgSearch{
+	margin-top: -40px;
+	max-width: 300px;
+	height: 300px;
+}
+.pNome{
+	font-size: 30px;
+	color: red;
+	margin-top: -50px;
+}
+
+@keyframes bounce {
+	20% {
+		transform: translateY(-6px);
+	}
+	40% {
+		transform: translateY(0px);
+	}
+
+	80% {
+		transform: translateY(-2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
